@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrage_border"
+        android:descendantFocusability="blocksDescendants">
+       <LinearLayout
+           android:layout_width="144dp"
+           android:layout_height="144dp"
+           android:layout_marginTop="2dp"
+           android:layout_marginBottom="2dp"
+           android:orientation="vertical"
+           android:gravity="center"
+           android:id="@+id/rl_ivandcb">
+        <ImageView
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:id="@+id/iv_place"
+
+        android:src="@drawable/white"
+        />
+        <CheckBox
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:visibility="gone"
+            android:clickable="false"
+            android:focusable="false"
+            android:button="@drawable/icon_checkbox"
+            android:id="@+id/cb_arragement"/>
+       </LinearLayout>
+
+        <TextView
+            android:layout_width="144dp"
+            android:layout_height="72dp"
+
+            android:layout_marginTop="8dp"
+            android:background="@color/bg_agray"
+            android:id="@+id/tv_listview_place"
+            android:layout_toRightOf="@id/rl_ivandcb"
+            android:textSize="48sp"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+   <!--<TextView-->
+       <!--android:layout_width="wrap_content"-->
+       <!--android:layout_height="wrap_content"-->
+       <!--android:layout_marginLeft="4dp"-->
+       <!--android:layout_marginTop="2dp"-->
+       <!--android:layout_marginBottom="2dp"-->
+       <!--android:text="时间:"-->
+       <!--android:textSize="12sp"-->
+       <!--android:textColor="#ff8200"-->
+       <!--android:id="@+id/tv_listview__arrage_time"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/tv_listview_place"
+            android:id="@+id/ll_listview_time"
+            android:layout_toRightOf="@id/rl_ivandcb"
+            android:layout_marginTop="16dp"
+            >
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="24dp"
+
+           android:background="@color/bg_agray"
+           android:textSize="16sp"
+           android:textColor="@color/black"
+           android:id="@+id/tv_listview_go"
+           android:gravity="center_vertical"
+           android:layout_weight="7"
+
+           />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/dash"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+
+                android:id="@+id/tv_listview_arrive"
+                android:background="@color/bg_agray"
+                android:layout_marginLeft="8dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:layout_weight="7"
+                />
+
+      </LinearLayout>
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="4dp"-->
+            <!--android:text="地点:"-->
+
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:layout_marginBottom="2dp"-->
+            <!--android:textSize="12sp"-->
+            <!--android:textColor="#ff8200"-->
+            <!--android:id="@+id/tv_listview__arrage_place"-->
+            <!--android:layout_below="@id/ll_listview_time"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="4dp"-->
+            <!--android:text="人数:"-->
+            <!--android:layout_marginTop="2dp"-->
+            <!--android:layout_marginBottom="2dp"-->
+            <!--android:textSize="12sp"-->
+            <!--android:textColor="#ff8200"-->
+            <!--android:id="@+id/tv_listview__arrage_amount"-->
+            <!--android:layout_below="@id/tv_listview_place"/>-->
+
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="24sp"
+            android:layout_toRightOf="@id/tv_listview_place"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/black"
+
+            android:background="@color/bg_agray"
+            android:id="@+id/tv_listview_amount"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="24sp"
+            android:layout_toRightOf="@id/tv_listview_amount"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            android:textColor="@color/small_title"
+            android:gravity="bottom"
+            android:text="人"
+            />
+
+
+
+
+
+
+
+
+
+        <!--<ImageButton-->
+            <!--android:layout_width="64dp"-->
+            <!--android:layout_height="132dp"-->
+            <!--android:paddingTop="40dp"-->
+            <!--android:paddingBottom="40dp"-->
+            <!--android:background="#569597"-->
+            <!--android:layout_marginBottom="2dp"-->
+            <!--android:src="@drawable/icon_go"-->
+            <!--android:layout_toRightOf="@id/tv_listview_place"-->
+            <!--android:layout_marginTop="1dp"-->
+            <!--android:id="@+id/iv_listview_go"/>-->
+          <!--<ImageButton-->
+              <!--android:layout_width="64dp"-->
+              <!--android:layout_height="132dp"-->
+              <!--android:paddingBottom="34dp"-->
+              <!--android:paddingTop="34dp"-->
+              <!--android:background="@color/red"-->
+              <!--android:layout_toRightOf="@id/tv_listview_place"-->
+              <!--android:layout_marginTop="2dp"-->
+              <!--android:layout_marginBottom="2dp"-->
+              <!--android:id="@+id/iv_trump"-->
+              <!--android:src="@drawable/trump"-->
+              <!--/>-->
+
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

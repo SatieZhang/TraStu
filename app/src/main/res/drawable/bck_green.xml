@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<gradient
+
+     android:angle="315"
+    android:startColor="#00FA9A"
+    android:centerColor="#48D1CC"
+    android:endColor="#40E0D0"
+    android:centerY="0.5"
+    android:centerX="0.5"
+    android:type="linear"
+
+    />bck_orange.xml
+
+
+    <corners android:radius="2dp"/>
+</shape>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/bg_agray">
+
+        <SearchView
+            android:layout_width="360dp"
+            android:layout_height="36dp"
+            android:background="@drawable/serch_shape"
+            android:backgroundTint="@color/white"
+         />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="36dp"
+        android:weightSum="3">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="96dp"
+            android:drawableTop="@drawable/serve_leader"
+            android:background="@drawable/serve_border"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:text="留学生导游"
+            android:textSize="16sp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="96dp"
+            android:drawableTop="@drawable/serve_online"
+            android:background="@drawable/serve_border"
+            android:padding="4dp"
+            android:layout_weight="1"
+            android:text="在线导游"
+            android:textSize="16sp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="96dp"
+            android:drawableTop="@drawable/serve_question"
+            android:background="@color/bg_gray"
+            android:padding="4dp"
+            android:text="热点问题"
+            android:textSize="16sp"/>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
